@@ -16,7 +16,7 @@ data:
     # collector_port: 6666
 
     # Whether collector accepts ssl
-    # ssl: true
+    ssl: true
 
     # collector certificate validation
     # ssl_verify_certificate: true
