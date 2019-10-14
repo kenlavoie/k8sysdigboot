@@ -25,12 +25,11 @@ data:
     new_k8s: true
     # k8s_cluster_name: production
     jmx:
-     per_process_beans:
-        cassandra: 
-        pattern: “org.apache.cassandra.service.CassandraDaemon”
-        beans:
-    	    - query: "org.apache.cassandra.db:type=StorageService,scope=Read,name=UnreachableNodes“
+      per_process_beans:
+            pattern: “org.apache.cassandra.service.CassandraDaemon”
+            beans:
+    	      - query: "org.apache.cassandra.db:type=StorageService,scope=Read,name=UnreachableNodes“
       	    attributes:
-        	  - name: NodetoolStatus
-          	    alias: cassandra.nodetool.status
+        	          - name: NodetoolStatus
+          	        alias: cassandra.nodetool.status
 
