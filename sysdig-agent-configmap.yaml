@@ -23,8 +23,7 @@ data:
 
     #######################################
     new_k8s: true
-    # k8s_cluster_name: production 
-    
+    # k8s_cluster_name: production
     jmx:
      per_process_beans:
         cassandra: 
